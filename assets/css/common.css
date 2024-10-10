@@ -1,0 +1,93 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.inner{
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+
+html.hidden,
+html.hidden body{
+    overflow: hidden;
+    height: 100%;
+}
+
+.sc-visual .content .title a::before{
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png);
+    background-repeat: no-repeat;
+}
+
+
+
+.sc-visual .control-area .btn{
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+.sc-field .field-list i{
+    display: block;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 15px;
+    background-image: url(../img/css_sprites.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.sc-service .service-list i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-image: url(../img/service.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.sc-seoul .group-sns .sns-list a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sns.png) no-repeat 0 0;
+    text-indent: -9999em;
+}
+.sc-banner-board .control-area .btn.autoplay.active,
+.sc-banner-board .control-area .btn.autoplay,
+.sc-banner-board .control-area button{
+    background: url(../img/bg.png);
+    background-repeat: no-repeat;
+
+}
+
+.fix-btn{
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    z-index: 90;
+    margin-left: 600px;
+    opacity: 0;
+    bottom: -50px;
+    transition: 1s;
+}
+.fix-btn.show{
+    opacity: 1;
+    bottom: 50px;
+}
+.fix-btn .btn-top{
+    width: 50px;
+    height: 50px;
+    background: url(../img/top.png)no-repeat;
+
+}
+
